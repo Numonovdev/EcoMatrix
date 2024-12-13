@@ -17,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
@@ -28,7 +29,7 @@
       <header class="header container">
         <div class="logo">
           <img src="./images/logo.png" loading="lazy" alt="" />
-          <h1>
+          <h1 >
             EcoMatrix <br />
             Distribution LLC
           </h1>
@@ -39,40 +40,65 @@
             <a class="header-a" href="#">Home</a>
           </li>
           <li>
-            <select>
-              <option value="Adversite">Adversite</option>
-            </select>
+            
+            <a class="header-a" href="#">Adversite</a>
+
           </li>
           <li>
-            <select>
-              <option value="Supports">Supports</option>
-            </select>
+            
+            <a class="header-a" href="#">Supports</a>
           </li>
           <li>
             <a class="header-a" href="about">About</a>
           </li>
         </ul>
-
-        <button class="header-btn">Get Started</button>
+        <div class="menu-btn">
+          <button class="header-btn">Get Started</button>
+          <i class="fa-solid fa-bars menu-icon-open" id="menu-open"></i>
+        </div>
+            <ul class="menu-nav" id="menu-items">
+              <div class="menu-nav-div" >
+                <img src="images/logo.png" class="menu-img" alt="">
+                <h1 >
+                  EcoMatrix <br />
+                  Distribution LLC
+                </h1>
+                    </div>
+              <i class="fa-solid fa-x menu-close" id="menu-close"></i>
+              <li>
+                <a class="menu-a" href="#">Home</a>
+              </li>
+              <li>                
+                <a class="menu-a" href="#">Adversite</a>
+              </li>
+              <li>
+                <a class="menu-a" href="#">Supports</a>
+              </li>
+              <li>
+                <a class="menu-a" href="about">About</a>
+              </li>
+            </ul>
       </header>
       <main class="main container">
         <div class="main-info">
-          <h1>Eco-Driven Logistics for a Sustainable Future</h1>
-          <p>
+          <h1 data-aos="fade-right">Eco-Driven Logistics for a Sustainable Future</h1>
+          <p data-aos="fade-right">
             Innovative, Sustainable Supply Chain Solutions – From Green
             Warehousing to Carbon-Neutral Deliveries, We Help Build a Better
             Tomorrow.
           </p>
-          <button class="main-btn">Get Started</button>
+          <button class="main-btn" data-aos="fade-right">Get Started</button>
         </div>
         <img
           class="main-ing"
           src="./images/main-img.png"
           loading="lazy"
           alt="image"
+          data-aos="fade-left"
         />
       </main>
-      <div class="hero-block container">
+
+      <div class="hero-block container" data-aos="fade-up">
         <div class="hero-block-text">
           <img
             class="about-img"
@@ -96,10 +122,10 @@
 
     <section class="services">
       <div class="section-block container">
-        <h1>Services</h1>
+        <h1 data-aos="fade-up">Services</h1>
         <div class="services-blocks">
           <div class="services-block">
-            <div class="services-block-in">
+            <div class="services-block-in" data-aos="fade-up">
               <img src="images/image.png" loading="lazy" alt="" />
               <div class="services-block-box">
                 <h1>Eco-Friendly Supply Chain Management</h1>
@@ -109,7 +135,7 @@
                 </p>
               </div>
             </div>
-            <div class="services-block-in">
+            <div class="services-block-in" data-aos="fade-up">
               <img src="images/Group 83 (1).png" loading="lazy" alt="" />
               <div class="services-block-box">
                 <h1>Green Warehousing Solutions</h1>
@@ -120,7 +146,7 @@
             </div>
           </div>
           <div class="services-block">
-            <div class="services-block-in">
+            <div class="services-block-in" data-aos="fade-up">
               <img src="images/Group 83 (2).png" loading="lazy" alt="" />
               <div class="services-block-box">
                 <h1>Sustainable Transportation and Logistics</h1>
@@ -129,7 +155,7 @@
                 </p>
               </div>
             </div>
-            <div class="services-block-in">
+            <div class="services-block-in" data-aos="fade-up">
               <img src="images/Group 83 (3).png" loading="lazy" alt="" />
               <div class="services-block-box">
                 <h1>Inventory Management and Optimization</h1>
@@ -139,7 +165,7 @@
               </div>
             </div>
           </div>
-          <div class="services-block-inb">
+          <div class="services-block-inb" data-aos="fade-up">
             <img src="images/Group 83 (4).png" loading="lazy" alt="" />
             <div class="services-block-box">
               <h1>Last-Mile Delivery Services</h1>
@@ -152,7 +178,7 @@
       </div>
 
       <div class="visualsection container">
-        <div class="visualsection-texts">
+        <div class="visualsection-texts" data-aos="fade-right">
           <h1>Visual Highlight Section</h1>
           <p>Include high-resolution images showcasing:</p>
           <div class="visualsection-checks">
@@ -191,14 +217,15 @@
           class="visualsection-img"
           loading="lazy"
           alt=""
-        />
+          data-aos="fade-left"
+          />
       </div>
     </section>
 
     <section class="main-section">
       <div class="container main-section-block">
         <div class="main-section-top">
-          <div class="main-section-text">
+          <div class="main-section-text" data-aos="fade-right">
             <h1>
               Introduce quality feature that boost your website rank &
               performance
@@ -216,9 +243,10 @@
             loading="lazy"
             class="main-section-img"
             alt=""
+            data-aos="fade-left"
           />
         </div>
-        <div class="main-section-bottom">
+        <div class="main-section-bottom" data-aos="fade-up">
             <h1>ADDRESS</h1>
             <h2>3001 N MIDLAND DR H2, MIDLAND, TX 79707</h2>
         </div>
@@ -228,17 +256,17 @@
 
     <section class="services">
         <div class="section-block container">
-          <h1>Additional Services</h1>
+          <h1 data-aos="fade-up">Additional Services</h1>
           <div class="services-blocks">
             <div class="services-block">
-              <div class="services-block-in">
+              <div class="services-block-in" data-aos="fade-right">
                 <img src="images/Group 83 (5).png" loading="lazy" alt="" />
                 <div class="services-block-box">
                   <h1>Custom Packaging Solutions</h1>
                   <p>Offer biodegradable and recyclable packaging materials tailored to client needs, reducing packaging waste.</p>
                 </div>
               </div>
-              <div class="services-block-in">
+              <div class="services-block-in" data-aos="fade-left">
                 <img src="images/Group 83 (6).png" loading="lazy" alt="" />
                 <div class="services-block-box">
                   <h1>Supplier Collaboration for Sustainability</h1>
@@ -247,7 +275,7 @@
               </div>
             </div>
             <div class="services-block">
-              <div class="services-block-in">
+              <div class="services-block-in" data-aos="fade-right">
                 <img src="images/Group 83 (9).png" loading="lazy" alt="" />
                 <div class="services-block-box">
                   <h1>Logistics Process Audits</h1>
@@ -256,7 +284,7 @@
                   </p>
                 </div>
               </div>
-              <div class="services-block-in">
+              <div class="services-block-in" data-aos="fade-left">
                 <img src="images/Group 83 (7).png" loading="lazy" alt="" />
                 <div class="services-block-box">
                   <h1>Compliance with Environmental Standards</h1>
@@ -267,7 +295,7 @@
               </div>
             </div>
             <div class="services-block">
-                <div class="services-block-in">
+                <div class="services-block-in" data-aos="fade-right">
                   <img src="images/Group 83 (10).png" loading="lazy" alt="" />
                   <div class="services-block-box">
                     <h1>Smart Technology Integration</h1>
@@ -276,7 +304,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="services-block-in">
+                <div class="services-block-in" data-aos="fade-left">
                   <img src="images/Group 83 (8).png" loading="lazy" alt="" />
                   <div class="services-block-box">
                     <h1>Community and Stakeholder Engagement</h1>
@@ -291,12 +319,12 @@
   
         <div class="visualsection container">
           <div class="visualsection-texts">
-            <h1>Call to Action Section</h1>
-            <p>Transform your logistics with EcoMatrix Distribution LLC. Partner with us to unlock a sustainable, efficient, and future-forward supply chain.</p>
+            <h1 data-aos="fade-up">Call to Action Section</h1>
+            <p data-aos="fade-up">Transform your logistics with EcoMatrix Distribution LLC. Partner with us to unlock a sustainable, efficient, and future-forward supply chain.</p>
             <div class="visualsection-inputs">
-              <input type="text" class="visualsection-input" placeholder="Enter your name">
-              <input type="email" placeholder="Enter your email" class="visualsection-input">
-              <textarea name="" id="" placeholder="Enter your message" class="visualsection-input visualsection-textarea "></textarea>
+              <input data-aos="fade-up" type="text" class="visualsection-input" placeholder="Enter your name">
+              <input data-aos="fade-up" type="email" placeholder="Enter your email" class="visualsection-input">
+              <textarea data-aos="fade-up" name="" id="" placeholder="Enter your message" class="visualsection-input visualsection-textarea "></textarea>
             </div>
           </div>
           <img
@@ -304,27 +332,30 @@
             class="visualsection-img"
             loading="lazy"
             alt=""
+            data-aos="fade-left"
           />
         </div>
       </section>
 
     <footer class="main-footer">
       <div class="subscribe-section">
-        <h2>Subscribe to get notified about update</h2>
-        <p>By subscribing with your mail, you will accept our privacy policy</p>
+        <h2 data-aos="fade-up">Subscribe to get notified about update</h2>
+        <p data-aos="fade-up">By subscribing with your mail, you will accept our privacy policy</p>
         <div class="subscribe-form">
-          <input type="email" placeholder="Enter your email" />
-          <button>Subscribe us</button>
+          <input data-aos="fade-up" type="email" placeholder="Enter your email" />
+          <button data-aos="fade-up">Subscribe us</button>
         </div>
       </div>
       <div class="black-footer">
         <div class="footer-bottom container">
-          <p>EcoMatrix Distribution LLC</p>
-          <p>Copyright © 2019 YourName, Inc</p>
+          <p >EcoMatrix Distribution LLC</p>
+          <p >Copyright © 2019 YourName, Inc</p>
         </div>
       </div>
     </footer>
 
-    <script src="/index.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
